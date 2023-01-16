@@ -1,0 +1,312 @@
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+            * {
+                font-family: "Montserrat", sans-serif;
+                color: #2E3A44;
+            }
+
+            body {
+                background: gray;
+            }
+
+            #qrcode {
+                text-align: center;
+            }
+
+            .d-inline-block {
+                display: inline-block;
+            }
+
+            .a4 {
+                background: white;
+                width: 210mm;
+            }
+
+            .fs-16px {
+                font-size: 16px;
+            }
+
+            .fs-14px {
+                font-size: 14px;
+            }
+
+            .fs-12px {
+                font-size: 12px;
+            }
+
+            .font-weight-700 {
+                font-weight:700;
+            }
+
+            .font-weight-600 {
+                font-weight:600;
+            }
+
+            .font-weight-500 {
+                font-weight:500;
+            }
+
+            .p-16px {
+                padding: 16px;
+            }
+
+            .p-24px {
+                padding: 24px;
+            }
+
+            .bg-cherry {
+                background: #2D014B;;
+            }
+            .text-white {
+                color: white;
+            }
+
+            .mt-16px {
+                margin-top: 16px;
+            }
+
+            .mt-20px {
+                margin-top: 20px;
+            }
+
+            .mt-24px {
+                margin-top: 24px;
+            }
+
+            .float-left {
+                float: left;
+            }
+
+            .float-right {
+                float: right;
+            }
+
+            .position-absolute {
+                position: absolute;
+            }
+
+            .position-relative {
+                position: relative;
+            }
+
+            .radius-24px {
+                border-radius: 24px;
+            }
+
+            .overflow-hidden {
+                overflow: hidden;
+            }
+
+            .label {
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            .content {
+                margin-top: 8px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            .w-30 {
+                width: 30%;
+            }
+
+
+            .w-40 {
+                width: 40%;
+            }
+
+            .w-50 {
+                width: 50%;
+            } 
+            
+            .w-60 {
+                width: 60%;
+            } 
+
+            
+            .w-100 {
+                width: 100%;
+            } 
+
+            .h-auto {
+                height: auto;
+            }
+
+            #order-information {
+                height: 160px;
+            }
+        </style>
+    </head>
+    <body>
+        <div
+            id="container"
+            class="a4"
+          >
+            <div class="p-16px bg-cherry position-relative">
+                <div>
+                    <img
+                        src="assets/images/logo.png"
+                        alt="logo"
+                        style="height: 30px;width: auto;"
+                    >  
+                </div>
+
+                <div
+                    class="position-absolute text-white fs-16px font-weight-700"
+                    style="top: 36%;right: 24px"
+                >
+                    Tiket Presale
+                </div>
+            </div>  
+
+            <div 
+                id="body"
+                class="p-24px"
+            >
+                <div
+                    id="event-information"
+                    class="mt-16px position-relative"
+                > 
+                      <div class="w-30 radius-24px overflow-hidden d-inline-block">
+                            <img
+                                id="event-thumbnail"
+                                src="https://th.bing.com/th/id/OIP.8r4OSSKJiB5Z5iRn9uivOQHaFj?pid=ImgDet&rs=1"
+                                alt="event-thumbnail"
+                                class="w-100 h-auto"
+                            >
+                      </div>
+
+                      <div
+                          class="d-inline-block position-absolute"
+                          style="top: 16px;left: 32%"
+                      >
+                            <div class="font-weight-700 fs-16px"> 
+                                Nama dari event tersebut yang maksimal 2 baris
+                            </div>  
+
+                            <div
+                                id="event-organizer"
+                                class="mt-20px font-weight-600 fs-16px position-relative"
+                            > 
+                                <div class="d-inline-block">
+                                    <img
+                                        src="assets/images/event-organizer-logo.png"
+                                        alt="event-organizer-logo"
+                                        style="height: auto;width: 32px;"
+                                    >
+                                </div>
+                                <div
+                                    class="d-inline-block position-absolute"
+                                    style="top: 8px; left: 36px"
+                                >
+                                    Nama event organizer
+                                </div>
+                            </div>  
+
+                            <div
+                                id="date"
+                                class="mt-20px font-weight-600 fs-14px position-relative"
+                            > 
+                                <div class="d-inline-block">
+                                    <img
+                                        src="assets/images/calendar-icon.png"
+                                        alt="calendar-icon"
+                                        style="height: auto;width: 20px;"
+                                    >
+                                </div>
+                                <div
+                                    class="d-inline-block position-absolute"
+                                    style="top: 4px; left: 36px"
+                                >
+                                    27 Januari 2023 , 12:00 - 17:00 
+                                </div>
+                            </div>  
+                      </div>
+                </div>
+
+                <hr class="mt-24px" />
+
+                <div
+                    id="order-information"
+                    class="mt-24px position-relative"
+                >
+                    <div class="fs-16px font-weight-700">
+                        Informasi Pesanan
+                    </div>
+
+
+                    <div
+                        id="attendee-information"
+                        class="w-60"
+                    >
+                        <div class="mt-16px">
+                            <div class="w-60 d-inline-block">
+                                <div class="label">
+                                    Nama
+                                </div>
+                                <div class="content">
+                                    Muhammad Ahmad
+                                </div>
+                            </div>
+                            <div class="w-30 d-inline-block">
+                                <div class="label">
+                                    Kode Registrasi
+                                </div>
+                                <div class="content">
+                                    XL2DPYLV
+                                </div>
+                            </div>
+                        </div>
+                      
+
+                        <div class="mt-16px">
+                            <div class="w-60 d-inline-block">
+                                <div class="label">
+                                    Tanggal Pembelian
+                                </div>
+                                <div class="content">
+                                    Senin 14 Maret 2022 07:12
+                                </div>
+                            </div>
+                            <div class="w-30 d-inline-block">
+                                <div class="label">
+                                    Harga
+                                </div>
+                                <div class="content">
+                                    Rp 359.000
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div
+                        id="qrcode"
+                        class="position-absolute"
+                        style="right: 0; top: 0"
+                    >
+                        <div class="fs-12px font-weight-600">
+                            Kode Registrasi
+                        </div>
+
+                        <div style="margin-top:8px;margin-bottom:8px;">
+                            <img 
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/QR_deWP.svg/1200px-QR_deWP.svg.png"
+                                alt="qrcode-image"
+                                style="height: 120px; width: auto"
+                            >
+                        </div>
+
+                        <div class="fs-14px font-weight-600">
+                            XL2DPYLV
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
